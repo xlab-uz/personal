@@ -1,0 +1,25 @@
+name: Personal
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build: 
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: ok
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            set -e
+            cd /var/www/personal/
+            git pull origin master
+            zola build

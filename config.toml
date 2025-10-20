@@ -1,0 +1,41 @@
+base_url = "https://xlab.uz"
+
+compile_sass = true
+
+title = "xlab.uz — Jamshid"
+theme = "terminus"
+
+build_search_index = true
+
+[markdown]
+highlight_code = false
+
+[extra]
+close_responsive_menu_on_resize = true
+copy_button = true
+favicon_emoji = "😷"
+fediverse_creator = "@ebkalderon@hachyderm.io"
+show_default_author = true
+
+main_menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
+    { name = "github", url = "https://github.com/jamshid-elmurodov", new_tab = true },
+    { name = "leetcode", url = "https://leetcode.com/u/jamshid_1122", new_tab = true },
+    { name = "linkedin", url = "https://www.linkedin.com/in/jamshid-elmurodov-739581269", new_tab = true },
+    { name = "telegram", url = "https://t.me/inherentlylazy", new_tab = true },
+]
+
+[extra.content_security_policy]
+enable = true
+allowed_domains = [
+    { directive = "connect-src", domains = ["'self'", "cloudflareinsights.com"] },
+    { directive = "script-src", domains = ["'self'", "static.cloudflareinsights.com"] },
+    { directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+    { directive = "font-src", domains = ["'self'"] },
+    { directive = "img-src", domains = ["'self'", "data:"] }
+]
+
+[extra.responsive_images]
+widths = [640, 784, 1280, 1920, 2560]
+fallback_width = 1280
