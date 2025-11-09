@@ -11,7 +11,7 @@ max_posts = 3
 
 I'm just an ordinary programmer. I rarely invent completely new projects. I mostly adapt ideas from others for my own work. I'm not a competitive programming champion, but I love solving problems on **LeetCode** and building things to learn new skills. I love a networking and building networking applications.
 
-### Experience
+### My Experience
 
 **[Uzbekistan Railways](https://railway.uz/en/) – Software Engineer Intern**  
 *Jun 2025 - Sep 2025*
